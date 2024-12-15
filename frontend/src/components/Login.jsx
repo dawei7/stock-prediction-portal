@@ -26,7 +26,7 @@ export const Login = () => {
             localStorage.setItem('refreshToken', response.data.refresh)
             console.log("Login successful")
             setIsLoggedIn(true)
-            navigate('/')
+            navigate('/dasboard')
         }catch(err){
             console.log(err.response.data)
             setError("Invalid username or password")
